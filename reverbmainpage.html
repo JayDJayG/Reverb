@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ReverbMainPage</title>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="Reverb.css">
+</head>
+
+<body>
+<video autoplay muted loop id="myVideo">
+  <source src="rev2.mp4" type="video/mp4">
+</video>
+
+<div class="content">
+  <h1>Exploring Sound</h1>
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+  <p>By: Rachel Demory</p>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+    if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+    } else {
+        video.pause();
+        btn.innerHTML = "Play";
+    }
+}
+</script>
+
+<div class="header">
+<div class="hamburger_menu"></div>
+<ul>
+	<li> <a href="reverbmainpage.html">Home</a></li>
+	<li> <a href="reverbmappage.html">Map</a></li>
+	<li> <a href="reverbgallerypage.html">Musicians</a></li>
+	<li> <a href="reverbverbpage.html">Reverb</a></li>
+	<li> <a href="reverbnavpage.html">Architecture</a></li>
+	<li> <a href="reverbwallacepage.html">History</a></li>
+	<li> <a href="reverbsoundpage.html">Videos</a></li>
+	<li> <a href="reverbquizpage.html">Gallery</a></li>
+</ul>
+</div>
+
+	<script>
+		jQuery('.hamburger_menu').on('click',function(){
+			jQuery(this).toggleClass('active');
+			jQuery('.header > ul').slideToggle();
+		});
+	</script>
+</body>
+</html>

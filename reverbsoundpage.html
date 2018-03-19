@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>reverbsoundpage</title>
+<link rel="stylesheet" type="text/css" href="Reverb.css">
+<meta charset="UTF-8">
+<title>reverbverbpage</title>
+<link rel="stylesheet" type="text/css" href="Reverb.css">
+<meta charset="UTF-8">
+<title>reverbnavpage</title>
+<link rel="stylesheet" type="text/css" href="Reverb.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+.menu {
+  float:left;
+  width:20%;
+  text-align:center;
+}
+.menu a {
+  background-color:#e5e5e5;
+  padding:8px;
+  margin-top:7px;
+  display:block;
+  width:100%;
+  color:black;
+}
+.main {
+  float:left;
+  width:60%;
+  padding:0 20px;
+}
+.right {
+  background-color:#e5e5e5;
+  float:left;
+  width:20%;
+  padding:15px;
+  margin-top:7px;
+  text-align:center;
+}
+
+@media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width:100%;
+  }
+}
+</style>
+
+</head>
+
+<body>
+<div class="header">
+<div class="hamburger_menu"></div>
+<ul>
+	<li> <a href="reverbmainpage.html">Home</a></li>
+	<li> <a href="reverbmappage.html">Map</a></li>
+	<li> <a href="reverbgallerypage.html">Musicians</a></li>
+	<li> <a href="reverbverbpage.html">Reverb</a></li>
+	<li> <a href="reverbnavpage.html">Architecture</a></li>
+	<li> <a href="reverbwallacepage.html">History</a></li>
+	<li> <a href="reverbsoundpage.html">Videos</a></li>
+	<li> <a href="reverbquizpage.html">Gallery</a></li>
+</ul>	
+</div>
+	
+  
+    
+    
+ <div style="background-color:#e5e5e5;color:black;text-align:center;">
+  <h1>More On Reverb</h1>
+</div>
+
+<div style="overflow:auto; color:black;">
+  <div class="menu">
+    <a href="reverbverbpage.html">Reverb</a>
+    <a href="reverbnavpage.html">Architecture</a>
+    <a href="reverbwallacepage.html">History</a>
+  <img id="ear" src="tambo.jpg" width="250px" height="295px"/></div>
+
+  <div class="main">
+    <h3>Featuring: David Drazier and Trveor Shanahan</h3>
+    <p> Trevor Shanahan has been making music ever since his father taught him guitar at a young age. He grew up in Kalamazoo, MI and went to a Catholic Prep School for highschool and middle school. During his sophomore year he started getting into making beats and raps. He went to Western Michigan University but soon transferred to be apart of what was happening in Northern's DIY Scene.He began doing saxaphone tracks on The Beanie Boys Jazz EP and only expanded from there. He began taking part in basement jam sessions with Dave Frazier and Brad Oyster, Emma Hollinger, Ted Devoe and others. Trevor picked up percussion and expanded his talent on keyboard to take part in heavier sessions.</p> <p>
+    	David Frazier has been making music all his life. He is part of a huge community in Marquette that produces music weekly. He is extremely avid on posting his music on soundcloud so that it can be feautured on anything from skate edits to collage style videos. Dave pairs his music and art together frequently. His list of inspirations is endless. Dave sees beauty in everything and anything and he channels that realization into his everyday craft. He keeps lots of sentimental things lying around his home and bedroom for sparks of inspiration as well.
+    </p>
+    <p> "I think of my music as a gift to humanity. I channel my inner demons and formulate them into a musical divine concauction. I do a little bit of everything, ya know?My voice is angelic. My hair is too, as people say, haha. Everything about music thrills me completely, especially in jam sessions. You never really know what you're going to create. I am truly in love with sound and all that it has come to be." -Trevor Shanahan </p>
+    <p> "Sound huh? Sound? I create it. I live with it. It's a need, a necessity. What would people even be without sound? It is how we communicate. It is how we show love and share our voices. We would be nothing without the gift of sound. It is a revelation and a calling and a job for me." -David Frazier</p>
+  </div>
+
+  <div class="right;">
+    <img src="chair.jpg" width="250px" height="250px"/>
+    <img src="colors.jpg" width="250px" height="250px"/>
+  </div>
+</div>
+
+<div style="background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px;"></div>
+  
+  
+<div id="videoal">
+    <div class="video">
+        <video controls>
+            <source src="trevtalksverb.mp4" type="video/mp4">
+            <source src="Videos.ogg" type="video/ogg">
+        </video>
+	</div>
+    
+    <div class="video">
+       <video controls>
+           <source src="davetalksverb.mp4" type="video/mp4">
+           <source src="Video.ogg" type="video/ogg">
+       </video>
+    </div> 
+   
+  <script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>

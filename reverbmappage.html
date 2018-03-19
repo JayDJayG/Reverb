@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>reverbmappage</title>
+<link rel="stylesheet" type="text/css" href="Reverb.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+}
+.main {
+    margin-left: 200px; 
+    font-size: 20px; 
+    padding: 0px 10px;
+}
+.active {
+    background-color: #E6C6C6;
+    color: white;
+}
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+</style>
+
+</head>
+
+<body class="gallery">
+<div class="header">
+<div class="hamburger_menu"></div>
+<ul>
+	<li> <a href="reverbmainpage.html">Home</a></li>
+	<li> <a href="reverbmappage.html">Map</a></li>
+	<li> <a href="reverbgallerypage.html">Musicians</a></li>
+	<li> <a href="reverbverbpage.html">Reverb</a></li>
+	<li> <a href="reverbnavpage.html">Architecture</a></li>
+	<li> <a href="reverbwallacepage.html">History</a></li>
+	<li> <a href="reverbsoundpage.html">Videos</a></li>
+	<li> <a href="reverbquizpage.html">Gallery</a></li>
+</ul>	
+</div>
+<div class="sidenav">
+  <a href="reverbgallerypage.html">Local Artists</a>
+  <a href="reverbsoundpage.html">Trevor Shanahan</a>
+  <a href="reverbgallerypage.html">Emma Hollinger</a>
+  <a href="#reverbgallerypage.html">Brad Oyster</a><a href="reverbsoundpage.html">David Frazier</a>
+  <button class="dropdown-btn">Videos 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="reverbsoundpage.html">Reverb Video</a>
+    <a href="sourcepagereverb.html">Sources</a>
+    
+  </div>
+ 
+</div>
+  <div id="header"> 
+  <h8>DIY LOCATIONS</h8></div>
+<div id="footer"> </div>
+<div class="main">
+  <h2 id="ground">Underground Venues</h2>
+  <p class="grounds">The best basements and lofts to see local bands in Marquette, MI.</p>
+  <p class="grounds">The Four Best Venues!</p>
+  
+
+
+<div class="oneFourthCol">
+   <img src="ohiocircle.png" />
+	<h6> Red Light Lounge</h6>
+	<h7> Ohio St. </h7>
+	<p class="trevs"> The Red Light Lounge is the grungiest of all of the house show locations. This venue is however the biggest, which can only lead to more people, more destruction, bottle breaking, crowd surfing.. you name it! This basement is fully equiped with a P.A. sound system and insturments. They host many events throughout the summer, like Squeeb Fest and 40oz Fest. So definitely stay tuned if this seems to fit your style! </p>
+	<p class="trevs"> Rating: 4.5</p>
+</div>
+  <div class="oneFourthCol">
+   <img src="warmingcircle.png" />
+   <h6> The Warming Center</h6>
+   <h7> Washington St.</h7>
+   <p class="trevs"> The Warming Center is a personal favorite venue of mine, I highly recommend going there for quiter, more intimate shows. However if the word gets out The Warming Center gets shoulder to shoulder and ususally shut down. There has been so many events there that the floor has started to concave. The Warming Center is a loft above the homeless shelter on Washington and it is known for the elite bands in Marquette's DIY scene.   </p>
+   <p class="trevs"> Rating: 5</p>
+</div>
+<div class="oneFourthCol">
+   <img src="spensecircle.png" />
+   <h6> The Olive Pit</h6>
+   <h7> College Ave.</h7>
+   <p class="trevs">The Olive Pit is a harder venue to get into. The Olive Pit is a large green house on College Ave with one back door. You usually have to be invited to these shows because of the size of the basement. There are more intimate and planned shows in this venue whihc makes for an all together better experience. This venue debutes a lot of bands at their start.</p>
+   <p class="trevs"> Rating: 4.6</p>
+</div>
+<div class="oneFourthCol">
+   <img src="coreycircle.png" />
+   <h6> The Peach Pit</h6>
+   <h7> Alger St.</h7>
+   <p class="trevs">The Peach Pit is a small venue near Alger that has very low ceilings. This is the venue most reside to out of boredom. The Peach Pit is more known for jam sessions and parties. If you are trying to relax on the weekend, have a couple beers, play music or just listen to everybodys new material then this is the place for you!</p>
+   <p class="trevs"> Rating: 3</p>
+</div>
+</div>
+<div id="mapz">
+	 <img src="map.png" width="600px" height="350px"/>
+</div>
+
+
+
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>

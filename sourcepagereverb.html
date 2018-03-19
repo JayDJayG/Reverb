@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>reverbgallerypage</title>
+<link rel="stylesheet" type="text/css" href="Reverb.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+}
+.main {
+    margin-left: 200px; 
+    font-size: 20px; 
+    padding: 0px 10px;
+}
+.active {
+    background-color: salmon;
+    color: white;
+}
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+</style>
+
+</head>
+
+<body class="gallery" bgcolor="#E6C6C6">
+<div class="header">
+<div class="hamburger_menu"></div>
+<ul>
+	<li> <a href="reverbmainpage.html">Home</a></li>
+	<li> <a href="reverbmappage.html">Map</a></li>
+	<li> <a href="reverbgallerypage.html">Musicians</a></li>
+	<li> <a href="reverbverbpage.html">Reverb</a></li>
+	<li> <a href="reverbnavpage.html">Architecture</a></li>
+	<li> <a href="reverbwallacepage.html">History</a></li>
+	<li> <a href="reverbsoundpage.html">Videos</a></li>
+	<li> <a href="reverbquizpage.html">Gallery</a></li>
+</ul>	
+</div>
+<div class="sidenav">
+  <a href="reverbgallerypage.html">Local Artists</a>
+  <a href="reverbsoundpage.html">Trevor Shanahan</a>
+  <a href="reverbgallerypage.html">Emma Hollinger</a>
+  <a href="#reverbgallerypage.html">Brad Oyster</a><a href="reverbsoundpage.html">David Frazier</a>
+  <button class="dropdown-btn">Videos 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="reverbsoundpage.html">Reverb Video</a>
+    <a href="sourcepagereverb.html">Sources</a>
+    
+	</div>
+ 
+</div>
+<div class="main">
+<h2>Source Codes:</h2>
+<p class="source"> Website By: Rachel Demory</p>
+
+<p><a href="https://www.w3schools.com/css/css_dropdowns.asp">Where I found my code:  https://www.w3schools.com/css/css_dropdowns.asp</a></p>
+<p class="source">References: <a href="https://www.youtube.com/watch?v=Xy3GlrddZFI">https://www.youtube.com/watch?v=Xy3GlrddZFI</a></p><p><a href="https://www.uaudio.com/blog/emt-reverb-history/">https://www.uaudio.com/blog/emt-reverb-history/</a></p>
+<p> <a href="https://acousticengineering.wordpress.com/2014/01/10/why-does-music-sound-better-with-reverb/">https://acousticengineering.wordpress.com/2014/01/10/why-does-music-sound-better-with-reverb/</a></a></p>
+	</div>
+</body>
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+</html>
