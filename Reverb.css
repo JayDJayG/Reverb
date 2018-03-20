@@ -220,11 +220,9 @@ h1 {
     display: block;
     width: 500px;
     height: 500px;
-    margin: 0 0px 0px 0;
-	float: left;
-
+    margin: 10 0px 0px 0;
+	float: right;
 }
-
 #videoal div.video video {
     width: 100%;
     height: 100%;
